@@ -1,65 +1,133 @@
-@import url("https://fonts.googleapis/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    font-family: "Nunito" , sans-serif;
-    margin: 0;
-}
-header{
-    background-image: url(car.jpg);
-    background-size: cover;
-    background-position: center;
     height: 100vh;
-    color: white;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdc4c4;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
-nav{
+.card{
     display: flex;
-    justify-content: space-around;
-    padding: 1.5rem;
+    width: 600px;
+    height: 500px;
+    border-radius: 15px;
 }
-nav .title{
-    font-size: 2rem;
+.card .image{
+    width: 50%;
+    height: 100%;
 }
-nav ul{
-    list-style-type: none;
+.card .image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.card .data{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 30px;
+}
+.card .data h3{
+    font-family: "Montserrat" , sans-serif;
+    letter-spacing: 5px;font-size: 12px;
+    font-size: 12px;
+    color: #a98787;
+    margin-bottom: 15px;
+}
+.card .data h1{
+    font-size: 38px;
+    line-height: 38px;
+    font-family: "Fraunces" , serif;
+    margin-bottom: 25px;
+}
+.card .data p{
+    color: #a98787;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.card .data .price{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 }
-nav ul li{
-    margin: 0 1rem;
+.card .data .price .new-price{
+    color: rgb(138, 0, 0);
+    font-size: 32px;
+    font-family: "Fraunces" , serif;
+    margin-right: 20px;
 }
-header .high-light{
-    background-color: #00c2ff;
-    padding: 1rem;
+.card .data .price .old-price{
+    color: #a98787;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+.card .data a{
+    background-color: rgb(138, 0, 0);
+    padding: 13px;
     border-radius: 10px;
+    font-family: "Montserrat" , sans-serif;
+    display: block;
+    margin-bottom: 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+    font-weight: bold;
 }
-header .content{
-    margin: 10rem auto;
-    width: 62rem;
+.card .data a:hover{
+    background-color: #fff;
+    color: rgb(138, 0, 0);
+    border: 3px solid rgb(138, 0, 0);
 }
-header .content h1{
-    font-size: 2.5rem;
+.card .data .Buy-now{
+    background-color: rgb(227, 41, 38);
 }
-header .content p{
-    font-size: 1.5rem;
+/*--------Login--------*/
+.container{
+    background-color: #fff;
+    font-family: "Montserrat" , sans-serif;
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgb(138, 0, 0);
+    box-shadow: 5px 5px 10px rgb(138, 0, 0);
+    border-radius: 15px;
 }
-footer{
-    background-color: #565a80;
-    padding: 1rem;
+.container h1{
+    text-align: center;
+    margin: 30px;
+
 }
-footer ul{
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
+form{
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 13px;
 }
-footer ul li{
-    list-style-type: none;
-    color: white;
+form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    border: 1px solid rgb(138, 0, 0);
+    border-radius: 10px;
+    padding: 7px;
 }
-footer strong{
-    color: #00c2ff;
+.container form #continue-btn{
+    height: 40px;
+    color: #fff;
+    background-color: rgb(138, 0, 0);
+    font-size: 19px;
+    font-weight: 500;
+    box-shadow: 5px 5px 10px rgb(138, 0, 0);
 }
